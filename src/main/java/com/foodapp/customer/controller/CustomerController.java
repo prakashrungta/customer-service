@@ -3,6 +3,7 @@ package com.foodapp.customer.controller;
 import com.foodapp.customer.entity.Customer;
 import com.foodapp.customer.service.CustomerService;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -19,6 +20,8 @@ public class CustomerController {
     @GetMapping("/customers")
     @Tag(name = "Customer Controller", description = "APIs for fetching customer")
     public List<Customer> getCustomer() {
+        Logger logger = org.slf4j.LoggerFactory.getLogger(CustomerController.class);
+        logger.info("Fetching all customers");
         return customerService.getCustomer();
     }
 

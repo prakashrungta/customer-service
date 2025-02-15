@@ -28,3 +28,11 @@ info:
     name: Customer Service Application
     version: 1.0.0
     description: DEMO JPA Spring Boot Application with Actuator
+
+#    logging:
+#      level:
+#        root: ${LOG_LEVEL:DEBUG}
+
+#baeldung:
+#    presentation:
+#        name: ${MSG:"Hello World"}
