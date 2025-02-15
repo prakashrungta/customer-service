@@ -7,5 +7,8 @@
 
 
 #eval $(minikube -p minikube docker-env)
+then do docker build
+
+minikube tunnel for exposing the Loadbalance Ip else it will be in pendig state
 
 
