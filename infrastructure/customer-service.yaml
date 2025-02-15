@@ -16,6 +16,7 @@ spec:
         - name: customer-service
           image: customer-service:latest  # Replace with your image
           imagePullPolicy: Never
+
           ports:
             - containerPort: 8080
           env:
