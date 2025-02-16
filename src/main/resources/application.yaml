@@ -24,6 +24,10 @@ management:
     web:
       exposure:
         include: "*"
+  tracing:
+    sampling:
+          probability: 1.0
+
 
 info:
   app:
@@ -37,3 +41,11 @@ order:
 
 welcome:
   msg: ${WELCOME_MSG:"Default is Hello World"}
+
+tracing:
+ url: ${JAEGER_URL:http://jaeger:4318/v1/traces}
+
+
+logging:
+  pattern:
+    console: '%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]'

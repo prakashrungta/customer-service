@@ -26,6 +26,8 @@ spec:
               value: "http://order-service/api/v1/orders/{customerId}"
             - name: WELCOME_MSG
               value: "Welcome to Customer Service-Prakash"
+            - name: JAEGER_URL
+              value: "http://jaeger:4318/v1/traces"
 
 ---
 apiVersion: v1
