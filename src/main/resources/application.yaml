@@ -31,10 +31,9 @@ info:
     version: 1.0.0
     description: DEMO JPA Spring Boot Application with Actuator
 
-#    logging:
-#      level:
-#        root: ${LOG_LEVEL:DEBUG}
+order:
+      service:
+        url: ${ORDER_SERVICE_URL}
 
-#baeldung:
-#    presentation:
-#        name: ${MSG:"Hello World"}
+welcome:
+  msg: ${WELCOME_MSG:"Default is Hello World"}

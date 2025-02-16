@@ -22,6 +22,11 @@ spec:
           env:
             - name: SERVER_PORT
               value: "8080"
+            - name: ORDER_SERVICE_URL
+              value: "http://order-service/api/v1/orders/{customerId}"
+            - name: WELCOME_MSG
+              value: "Welcome to Customer Service-Prakash"
+
 ---
 apiVersion: v1
 kind: Service
